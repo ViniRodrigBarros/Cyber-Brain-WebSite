@@ -1,0 +1,127 @@
+#imgpos{
+	position: absolute; 
+	width: 120px;
+	top:-20px; 
+	left: -1px;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 1em;
+	font-family: "Trebuchet MS, Helvica",sans-serif;
+	background-image: url(imagens/caminho1.png);
+	background-repeat: no-repeat;
+	background-color: #15121B;
+
+}
+#cabecalho{
+	
+	height: 73.46px;
+	text-align: center;
+}
+#cabecalho a:link, #cabecalho a:visited{
+	color: white;
+	text-decoration: none;
+	padding: 12px 30px;
+}
+#cabecalho a:hover{
+	color: #0C0046;
+	background: white;
+
+}
+a:link, a:visited{
+	color: white;
+}
+a:hover{
+	color: darkblue;
+}
+
+#principal{
+	background: ;
+	width: 920px;
+	margin: 0 auto;
+	padding: 15px;
+}
+#posts{
+	width: 660px;
+	float: left;
+}
+
+#posts,#lateral{
+	background: #13131B;
+}
+#rodape{
+	text-align: center;
+	padding: 15px;
+	clear: both;
+}
+.postagem{
+	padding: 20px;
+	margin-bottom: 20px;
+	background: #13131B;
+}
+.data-post{
+	font-size: 0.8em;
+	padding top:20px;
+	margin-top: 10px;
+	color: white;
+	display: block;
+}
+
+.face{
+	width:200px;
+	height:265px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	position: absolute;
+	border-radius: 10px;
+}
+#container{
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 265px;
+
+}
+#carta{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	transform-style: preserve-3d;
+	transition: all 0.5s ease;
+
+}
+#frente{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	backface-visibility: hidden;
+	background-image: url(imagens/Componente1.png);
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+#atras{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	backface-visibility: hidden;
+	background-image: url(imagens/f.png);
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	transform: rotateY(-180deg);
+}
+#container:hover #carta{
+	transform: rotateY(180deg);
+}
+#imgcard{
+	width: 60%;
+	margin: 30px;
+  	display: block;
+}
